@@ -1,16 +1,25 @@
 {
   "name": "react-gravatar",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React component for display gravatar profile image.",
+  "main": "dist/index.js",
   "scripts": {
-    "link": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nivla/react-gravatar"
+  },
+  "author": "Alvin Dickson <dickson.alvin@gmail.com> (http://github.com/nivla)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nivla/react-gravatar/issues"
+  },
   "dependencies": {
     "md5": "^2.0.0"
+  },
+  "homepage": {
+    "url": "https://github.com/nivla/react-gravatar"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.6",

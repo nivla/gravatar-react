@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'dist/ReactGravatar.min.js'
+    filename: 'dist/index.js'
   },
   module: {
     loaders: [
