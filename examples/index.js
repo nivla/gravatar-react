@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-import Gravatar from '../src/'
+import Gravatar from '../dist/'
 
 class App extends Component {
   render() {

@@ -1,7 +1,9 @@
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'dist/index.js'
+    filename: 'dist/index.js',
+    libraryTarget: 'umd',
+    library: 'GravatarReact'
   },
   module: {
     loaders: [
