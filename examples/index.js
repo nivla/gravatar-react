@@ -6,7 +6,11 @@ class App extends Component {
   render() {
     return(
       <div >
-        <Gravatar email="dickson.alvin@gmail.com" size="150" alt="Alvin Dickson"/>
+        <Gravatar
+          email="dickson.alvin@gmail.com"
+          size="150"
+          alt="Alvin Dickson"
+        />
       </div>
     );
   }
