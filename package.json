@@ -1,6 +1,6 @@
 {
   "name": "gravatar-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React component for display gravatar profile image.",
   "main": "dist/index.js",
   "scripts": {
