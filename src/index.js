@@ -6,7 +6,7 @@ class Gravatar extends Component {
 
   render() {
     let  base = "http://www.gravatar.com/avatar/";
-    if (this.props.secure)  
+    if (this.props.secure)
       base = "https://secure.gravatar.com/avatar/";
 
     const hash = md5(this.props.email);
@@ -20,10 +20,10 @@ class Gravatar extends Component {
 
     return(
       <img
-      src={src}
-      className = {this.props.className}
-      alt = {this.props.alt}
-      style = {this.props.style}
+        src={src}
+        className = {this.props.className}
+        alt = {this.props.alt}
+        style = {this.props.style}
       />
     );
   }
@@ -34,8 +34,7 @@ Gravatar.displayName = "Gravatar";
 Gravatar.defaultProps = {
   size: 50,
   secure: false,
-  rating: 'G',
-  https: false
+  rating: 'G'
 };
 
 Gravatar.PropTypes = {
