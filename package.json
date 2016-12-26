@@ -4,7 +4,8 @@
   "description": "React component for display gravatar profile image.",
   "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "mocha --compilers .:test/compiler.js test/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,18 @@
     "url": "https://github.com/nivla/react-gravatar"
   },
   "devDependencies": {
+    "babel-core": "^6.21.0",
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
+    "babel-preset-react": "^6.16.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.7.0",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.14.0",
+    "mocha": "^3.2.0",
     "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14.8",
     "react-dom": "^0.14.6",
     "react-hot-loader": "^1.3.0",
     "webpack": "^1.12.10",

@@ -2,17 +2,17 @@
 React component for rending gravatar images.
 
 ## Install
-```
+```js
 npm install gravatar-react
 ```
 
 ## Usage
 Simple example
-```
+```js
 <Gravatar email="dickson.alvin@gmail.com" />
 ```
 or
-```
+```js
 <Gravatar
   email="dickson.alvin@gmail.com"
   size=100
@@ -28,6 +28,8 @@ or
 - **rating**     -- image rating, default G
 - **alt**        -- alt image
 - **secure**     -- require secure images, default false
+- **force**      -- force the default image to always load
+- **default**    -- default gravatar when email have no matches images
 
 ## License
 MIT

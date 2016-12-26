@@ -11,12 +11,20 @@ class Gravatar extends Component {
 
     const hash = md5(this.props.email);
 
-    const query = querystring.stringify({
+    let query = {
       r: this.props.rating,
       s: this.props.size
-    });
+    };
 
-    const src = base + hash + "?" + query;
+    if(this.props.force) {
+      query['f'] = 'y';
+    }
+
+    if(this.props.default) {
+      query['d'] = this.props.default;
+    }
+
+    const src = base + hash + "?" +  querystring.stringify(query);
 
     return(
       <img
@@ -43,7 +51,9 @@ Gravatar.PropTypes = {
   size: PropTypes.number,
   secure: PropTypes.bool,
   className: PropTypes.string,
-  style: PropTypes.object
+  style: PropTypes.object,
+  force: PropTypes.bool,
+  defaut: PropTypes.string
 };
 
 export default Gravatar;
